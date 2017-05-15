@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h2>ロクﾞイン</h2>
+{% end %}
+{% block body %}
+    <form method="POST">
+        {% raw xsrf_form_html() %}
+        <p><span>ユーサﾞー名:</span><input type="text" id="username"/></p>
+        <p><span>ハﾟスワートﾞ:</span><input type="password" id="password" /></p>
+        <p><input type="BUTTON" value="ロクﾞイン" id="login" /></p>
+        <p><input type="BUTTON" value="新規登録" id="register" /></p>
+    </form>
+{% end %}
+
+
+
+
+
+

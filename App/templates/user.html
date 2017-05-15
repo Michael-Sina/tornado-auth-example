@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h2>ユーサﾞーのインフォメーション:</h2>
+{% end %}
+
+{% block body %}
+    <ul>
+        {% for one in users %}
+            <li>ユーサﾞー名:{{one[1]}}</li>
+            <li>ハﾟスワートﾞ:{{one[2]}}</li>
+            <li>メールアトﾞレス:{{one[3]}}</li>
+        {% end %}
+    </ul>
+    <p><input type="BUTTON" value="ロクﾞアウト" id="logout" /></p>
+{% end %}
+
+
+
